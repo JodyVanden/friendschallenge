@@ -1,12 +1,5 @@
-<div class="wrapper-cover-picture">
+
   <div class="filters-wrapper">
-    <div class="wrapper-cover-picture">
-      <div class="container">
-        <div class= "slogan">
-          <h1>TROUVE TA COURSE, <br>INVITE TES POTES.</h1>
-        </div>
-      </div>
-    </div>
     <div class="box">
       <div class= "form-group form-items">
         <%= form_tag races_path, method: :get do %>
@@ -22,21 +15,17 @@
             <div class="form-item2">
             <%= search_field :search, :place, placeholder: 'OÙ ?', class: "search-form", style: "text-align: center" %>
             <%= date_field :search, :date, placeholder: 'QUAND ?', class: "search-form", style: "text-align: center" %>
+            <div class="search-form">
+                <% level_options = -'<option value="">NIVEAU</option><option value="1">Débutant</option><option value="2">Intermédiaire</option><option value="3">Expert</option>' %>
+                <%= select_tag :level, level_options.html_safe, class: "form-control" %>
+              </div>
+              <%= search_field :search, :price, placeholder: 'PRIX ?', class: "search-form", style: "text-align: center" %>
             </div>
           </div>
           <div class="form-item3 text-center">
             <%= submit_tag "GO !", class: "btn-search"%>
           </div>
           <div class="row">
-
-            <div class="form-item2">
-            <div class="search-form">
-              <% level_options = -'<option value="">NIVEAU</option><option value="1">Débutant</option><option value="2">Intermédiaire</option><option value="3">Expert</option>' %>
-              <%= select_tag :level, level_options.html_safe, class: "form-control" %>
-
-            </div>
-              <%= search_field :search, :price, placeholder: 'PRIX ?', class: "search-form", style: "text-align: center" %>
-            </div>
          </div>
         <% end %>
       </div>
@@ -92,4 +81,4 @@
       </div>
     </div>
   </div>
-</div>
+
