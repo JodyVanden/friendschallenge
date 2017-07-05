@@ -16,7 +16,7 @@
           <% end %>
         <% end %>
       </div>
-      <div class="form-item4 hidden-md hidden-lg">
+      <div class="form-item4 hidden-sm hidden-md hidden-lg">
           <% @sports.each do |sport| %>
             <!-- <div class="row"> -->
               <!-- <div class="col-xs-12"> -->
@@ -28,12 +28,14 @@
           </div> -->
         <% end %>
       </div>
-      <div class="row form-item2">
-        <div class="col-xs-12 col-sm-6">
-          <%= search_field :search, :place, placeholder: 'OÙ ?', class: "search-form", style: "text-align: center" %>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <%= date_field :search, :date, class: "search-form", style: "text-align: center", id: "datepicker", placeholder: "QUAND ?" %>
+      <div class="form-item2">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <%= search_field :search, :place, placeholder: 'OÙ ?', class: "search-form", style: "text-align: center" %>
+          </div>
+          <div class="col-xs-12 col-sm-8 ">
+            <%= date_field :search, :date, class: "search-form", style: "text-align: center", id: "datepicker", placeholder: "QUAND ?" %>
+          </div>
         </div>
       </div>
       <div class="form-item3 text-center">
