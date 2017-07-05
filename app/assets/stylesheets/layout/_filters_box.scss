@@ -17,21 +17,39 @@
   margin-bottom: 30px;
 }
 
-.form-item2 {
+.form-item2.row{
+
   display: flex;
   justify-content: space-between;
   font-family: $header-font;
   font-size: 30px;
+  text-align: center;
 }
 
 .form-item3 {
   margin-top: 20px;
 }
 
+.form-item4 {
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .buttons-sports {
   flex: 0 0 30%;
   height: 25vh;
   width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.buttons-sports-center {
+  flex: 0 0 30%;
+  height: 25vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
