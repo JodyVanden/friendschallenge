@@ -18,11 +18,15 @@
 }
 
 .form-item2.row{
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   font-family: $header-font;
   font-size: 30px;
+}
+
+.search-form-col-xs-12{
+    text-align: center;
+
 }
 
 .form-item3 {
@@ -32,6 +36,7 @@
 .form-item4 {
   align-items: center;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .buttons-sports {
