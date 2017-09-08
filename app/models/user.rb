@@ -17,8 +17,8 @@ class User < ApplicationRecord
   has_many :race_groups_as_member, through: :group_memberships, source: :race_group
   has_many :races, through: :race_groups_as_member
   #validation
-  validates :first_name, presence: true
-  validates :last_name, presence: true
+  #validates :first_name, presence: true
+  #validates :last_name, presence: true
   validates :email, presence: true, uniqueness: true
 
   #photo uploader
